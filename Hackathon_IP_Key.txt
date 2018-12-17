@@ -1,0 +1,27 @@
+Hi Bhavesh Bhatt & Team,
+
+Please note the following details  required for you to launch your AWS instance for the Hackathon :
+Public IP Address : 54.201.61.121
+Key  Name : hackathon_8
+Best of Luck!
+FAA Team
+
+
+sudo ssh -i hackathon_8.pem ubuntu@54.201.61.121
+
+jupyter notebook --ip='*'
+
+http://ip-10-0-0-95:8888/?token=54344c71f7baf73414e0ed72fbbc1f8984c04eee9a3863b7&token=54344c71f7baf73414e0ed72fbbc1f8984c04eee9a3863b7
+
+http://54.201.61.121:8888/?token=54344c71f7baf73414e0ed72fbbc1f8984c04eee9a3863b7&token=54344c71f7baf73414e0ed72fbbc1f8984c04eee9a3863b7
+
+scp -i hackathon_8.pem ubuntu@54.201.61.121:~/hackthon-data/embedd_AI_scene_test_images.tar.gz .
+
+sudo tar xvzf embedd_AI_scene_train.tar.gz
+
+for f in *.jpg; do sudo mogrify -resize 64x64! "$f"; done
+
+
+scp -i hackathon_8.pem ubuntu@54.201.61.121:~/Trial_12_12_18.ipynb .
+
+scp -i hackathon_8.pem ubuntu@54.201.61.121:~/keras_pretrained/Keras-VGG16-places365/Untitled.ipynb .
